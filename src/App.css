@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+.banner {
+  width: 86%;
+  display: block;
+  margin: auto;
+}
+
+.text {
+  position: absolute;
+  top: 250px;
+  left: 240px;
+  color: #252525;
+  font-weight: 500;
+  opacity: .9;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.white {
+  color: white;
+}
+
+.dark {
+  color: #252525;
+}
+
+.balck {
+  color: black;
+}
+.buttons {
+  height: 40px;
+  width: 5px;
+  position: absolute;
+  top: 270px;
+  right: 106px;
+}
+
+.buttons span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttons span:hover {
+  background-color: #ff4f40;
+}
+
+.buttons span:active {
+  border: 2px solid #ff4f40;
+}
+
+.catogries {
+  display: flex;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 30px auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+
+.filters p {
+  cursor: pointer;
+}
+
+.filters p:hover {
+  color: #232323;
+}
+
+.filters_1 {
+  transition: 1s;
+  display: flex;
+  width: 85%;
+  margin: 30px auto;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+.filter {
+  height: 170px;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-around;
+}
