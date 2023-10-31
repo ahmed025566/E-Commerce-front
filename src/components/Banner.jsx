@@ -17,6 +17,17 @@ const Banner = () => {
       .catch((err) => err.message);
   }, []);
 
+  const selectBanner = (e) => {
+    if (e.target.childNodes.length === 0) {
+      e.target.classList.add('selected');
+      e.target.parentElement.childNodes.forEach((item) => {
+        if (item != e.target) {
+          item.classList.remove('selected');
+        }
+      });
+    }
+  };
+
   return (
     <div>
       <img src={image} alt="banner" className="banner" />
@@ -29,7 +40,7 @@ const Banner = () => {
           {product.price}
         </p>
       </div>
-      <div className="buttons">
+      <div className="buttons" onClick={selectBanner}>
         <span onClick={() => {
           setProduct(products[1][0]);
           setImage(products[1][1]);

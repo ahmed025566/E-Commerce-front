@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
+
 .banner {
   width: 86%;
   display: block;
@@ -11,7 +13,7 @@
   left: 240px;
   color: #252525;
   font-weight: 500;
-  opacity: .9;
+  opacity: 0.9;
   font-size: 30px;
   line-height: 38px;
   font-family: 'Poppins', sans-serif;
@@ -28,6 +30,7 @@
 .balck {
   color: black;
 }
+
 .buttons {
   height: 40px;
   width: 5px;
@@ -38,8 +41,8 @@
 
 .buttons span {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
@@ -55,6 +58,12 @@
 
 .catogries {
   display: flex;
+}
+
+.category {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
 }
 
 .filters {
@@ -89,7 +98,95 @@
 .filter {
   height: 170px;
   display: flex;
-  
   flex-direction: column;
   justify-content: space-around;
+}
+
+.filterHead {
+  color: #232323;
+  font-weight: 600;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.choice:hover {
+  color: #232323;
+}
+
+.filter-class-1 {
+  color: #232323;
+  font-weight: 600;
+}
+
+.filter-class-2 {
+  color: #232323;
+  font-weight: 600;
+}
+
+.filter-class-2::before {
+  content: 'x ';
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Black {
+  background-color: black;
+}
+
+.Blue {
+  background-color: blue;
+}
+
+.Brown {
+  background-color: brown;
+}
+
+.Gray {
+  background-color: gray;
+}
+
+.White {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.Oragne {
+  background-color: orange;
+}
+
+.arrow {
+  border: solid orange;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+  left: 10px;
+  top: -25px;
+  animation-name: 'move';
+  animation-duration: 950ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% { top: 0; }
+  50% { top: 7px; }
+  100% { top: 0; }
+}
+
+.selected {
+  border: 1.5px solid orange;
 }
